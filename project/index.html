@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                <h1>Web Development Learning Platform</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Lesson List -->
+            <div class="lesson-list">
+                <div class="category">
+                    <h2>HTML</h2>
+                    <button class="lesson-btn active" data-lesson="1">HTML Basics</button>
+                    <button class="lesson-btn" data-lesson="2">Links & Images</button>
+                    <button class="lesson-btn" data-lesson="3">Lists & Tables</button>
+                    <button class="lesson-btn" data-lesson="4">Forms</button>
+                    <button class="lesson-btn" data-lesson="5">Semantic HTML</button>
+                </div>
+
+                <div class="category">
+                    <h2>CSS</h2>
+                    <button class="lesson-btn" data-lesson="6">CSS Selectors</button>
+                    <button class="lesson-btn" data-lesson="7">Box Model</button>
+                    <button class="lesson-btn" data-lesson="8">Flexbox</button>
+                    <button class="lesson-btn" data-lesson="9">Grid Layout</button>
+                    <button class="lesson-btn" data-lesson="10">Responsive Design</button>
+                </div>
+
+                <div class="category">
+                    <h2>JavaScript</h2>
+                    <button class="lesson-btn" data-lesson="11">JS Variables</button>
+                    <button class="lesson-btn" data-lesson="12">Functions</button>
+                    <button class="lesson-btn" data-lesson="13">DOM Manipulation</button>
+                    <button class="lesson-btn" data-lesson="14">Events</button>
+                    <button class="lesson-btn" data-lesson="15">Arrays & Objects</button>
+                </div>
+            </div>
+
+            <!-- Lesson Content -->
+            <div class="lesson-content">
+                <div class="lesson-card">
+                    <h2 id="lessonTitle">HTML Basics</h2>
+                    <div class="content-section">
+                        <h3>Example:</h3>
+                        <pre><code id="lessonExample"></code></pre>
+                    </div>
+                    
+                    <div class="content-section">
+                        <h3>Explanation:</h3>
+                        <p id="lessonExplanation"></p>
+                    </div>
+
+                    <div class="content-section">
+                        <h3>Exercise:</h3>
+                        <p id="lessonExercise"></p>
+                        <textarea id="codeEditor" placeholder="Write your code here..."></textarea>
+                        <button id="previewBtn" class="preview-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                            Preview Code
+                        </button>
+                    </div>
+
+                    <div id="previewSection" class="preview-section hidden">
+                        <h3>Preview:</h3>
+                        <div id="previewContent" class="preview-content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
